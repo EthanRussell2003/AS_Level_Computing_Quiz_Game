@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA758696-2C2E-4AF7-B586-90F329CACD79}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Coursework</RootNamespace>
+    <AssemblyName>Coursework</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\CustomException.cs" />
+    <Compile Include="Forms\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Breakout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Breakout.Designer.cs">
+      <DependentUpon>Breakout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EndScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EndScreen.Designer.cs">
+      <DependentUpon>EndScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HardQuestionDragDrop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HardQuestionDragDrop.Designer.cs">
+      <DependentUpon>HardQuestionDragDrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HardQuestionDropDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HardQuestionDropDown.Designer.cs">
+      <DependentUpon>HardQuestionDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HardQuestionRadioButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HardQuestionRadioButton.Designer.cs">
+      <DependentUpon>HardQuestionRadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HardQuestionTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HardQuestionTextBox.Designer.cs">
+      <DependentUpon>HardQuestionTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Leaderboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Leaderboard.Designer.cs">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuestionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuestionEdit.Designer.cs">
+      <DependentUpon>QuestionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserEdit.Designer.cs">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuestionDragDrop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuestionDragDrop.Designer.cs">
+      <DependentUpon>QuestionDragDrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuestionDropDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuestionDropDown.Designer.cs">
+      <DependentUpon>QuestionDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuestionRadioButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuestionRadioButton.Designer.cs">
+      <DependentUpon>QuestionRadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\User.cs" />
+    <Compile Include="Data\Program.cs" />
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuestionTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuestionTextBox.Designer.cs">
+      <DependentUpon>QuestionTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Template.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Template.Designer.cs">
+      <DependentUpon>Template.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Questions.cs" />
+    <EmbeddedResource Include="Forms\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Breakout.resx">
+      <DependentUpon>Breakout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EndScreen.resx">
+      <DependentUpon>EndScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HardQuestionDragDrop.resx">
+      <DependentUpon>HardQuestionDragDrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HardQuestionDropDown.resx">
+      <DependentUpon>HardQuestionDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HardQuestionRadioButton.resx">
+      <DependentUpon>HardQuestionRadioButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HardQuestionTextBox.resx">
+      <DependentUpon>HardQuestionTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Leaderboard.resx">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuestionEdit.resx">
+      <DependentUpon>QuestionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserEdit.resx">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuestionDragDrop.resx">
+      <DependentUpon>QuestionDragDrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuestionDropDown.resx">
+      <DependentUpon>QuestionDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuestionRadioButton.resx">
+      <DependentUpon>QuestionRadioButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuestionTextBox.resx">
+      <DependentUpon>QuestionTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Template.resx">
+      <DependentUpon>Template.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms\Resources\icon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms\Resources\icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CPUImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GPUImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PSUImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICT Background 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICT Background 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICT Background 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RingTopologyAdvantage.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BusTopologyAdvantage.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StarTopologyAdvantage.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BusTopology.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RingTopology.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StarTopology.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trophy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trophy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CPU TEST1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GPU TEST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSU TEST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreenTick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreenTick1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreenTick2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Storage image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\embedded sytstem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\headset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transparent background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainHelp.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginHelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginHelp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EasyDragDropHelp.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EasyTextBoxHelp.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EasyRadioButtonHelp.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EasyRadioButtonHelp1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EasyDropDownHelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EndScreenHelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeaderboardHelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HardDragDropHelp.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HardTextBoxHelp.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HardRadioButtonHelp.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HardDragDropHelp1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HardDropDownHelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdminHelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserEditHelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuestionEditHelp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuestionEditHelp2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuestionEditHelp3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdminHelp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdminHelp2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
